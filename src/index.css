@@ -59,6 +59,8 @@ body {
   font-weight: 700;
 }
 
+
+
 /* CABECERA 1 */
 
 .seccion-cabecera{
@@ -223,9 +225,8 @@ body {
  }
  
  .card-info {
-  --color: #181818;
-  background: var(--color);
-  color: var(--color);
+  background: #181818;
+  color: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,3 +251,80 @@ body {
   transition: color 1s;
  }
  
+
+
+
+ @media (max-width:320px){
+
+  /* MEDIA NAV */
+
+  .nav{
+    font-size: 2rem;
+    justify-content: right;
+    background: #2a2c31;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .links a{
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .links {
+    display: flex;
+    gap: 0.5rem;
+
+  }
+  
+  .btn-nav{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+  
+  .btn-nav:hover{
+    background: #dfba69;
+    color: #2e2e2e;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  /* MEDIA CABECERA 1 */
+
+  .seccion-cabecera{
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .cabecera-izq{
+    text-align: center;
+    height: 150px;
+  }
+  
+  .cabecera-izq h1{
+    font-size: 40px;
+    color: #dfba69;
+  }
+  
+  .cabecera-izq p{
+    font-size: 14px;
+  }
+  
+  .cabecera-der{
+    margin: 0;
+    max-height: 230px;
+    text-align: center;
+  }
+  
+  .imagen-perfil{
+    width: 12rem;
+  }
+
+
+}
