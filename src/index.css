@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   color: rgba(255, 255, 255, 0.87);
@@ -65,7 +66,7 @@ body {
 
 .seccion-cabecera{
   height: 650px;
-  background: #3e4147;
+  background: #2a2c31;
   display: flex;
   justify-content: space-around;
   padding-top: 18rem;
@@ -152,11 +153,7 @@ body {
 }
 
 .contenedor-path{
-  background: #3e4147;
-}
-
-.contenedor-path path{
-  background: #3e4147;
+  background: #2a2c31;
 }
 
 
@@ -165,27 +162,21 @@ body {
 
 .seccion-tarjetas {
   display: flex;
+  margin-top: 300px;
+  padding: 0;
+  padding-inline: 5%;
   flex-wrap: wrap;
   row-gap: 3rem;
-  column-gap: 3rem;
-  justify-content: center;
-  align-items: flex-start;
-  padding-inline: 20%;
+  column-gap: 2rem;
+ 
   height: auto;
-  margin-bottom: 54rem;
+  margin-bottom: 8rem;
+  max-width: 1500px;
 }
 
 .card {
-  --background: linear-gradient(to left, #4a659b 0%, #be3838 100%);
-  width: 390px;
+  width: 31%;
   height: 554px;
-  padding: 5px;
-  border-radius: 1rem;
-  overflow: visible;
-  background: #59d261e1;
-  background: var(--background);
-  position: relative;
-  z-index: 1;
   view-timeline-name: --tarjeta;
   view-timeline-axis: block;
   animation-timeline: --tarjeta;
@@ -207,43 +198,25 @@ body {
       scale: 100%;
     }
  }
-
- .card::after {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  transform: scale(0.8);
-  filter: blur(35px);
-  background: #f7ba2b;
-  background: var(--background);
-  transition: opacity .1s;
- }
  
  .card-info {
-  background: #181818;
-  color: #181818;
+  background: #fffedf;
+  color: #fffedf;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   overflow: visible;
-  border-radius: .7rem;
+  border: 10px solid #fffedf;
+  border-radius: 20px;
  }
  
  .card .title {
+  font-family: "Montserrat";
+  font-size: 34px;
   font-weight: bold;
   letter-spacing: .1em;
- }
- 
- /*Hover*/
- .card:hover::after {
-  opacity: 0;
  }
  
  .card:hover .card-info {
@@ -252,14 +225,78 @@ body {
  }
 
  .pie-pagina{
-  height: 200px;
+  height: 350px;
   background: #3e4147;
   align-content: center;
   text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 700;
  }
  
 
+ @media (max-width:1080px){
+  /* MEDIA NAV */
 
+  .nav{
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .links a{
+    font-size: 18px;
+  }
+  
+  .btn-nav{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  /* MEDIA CABECERA 1 */
+
+  .seccion-cabecera{
+    flex-direction: column;
+    height: auto;
+    padding-top: 140px;
+  }
+
+  .cabecera-izq{
+    text-align: center;
+    height: 170px;
+  }
+  
+  .cabecera-izq h1{
+    font-size: 80px;
+  }
+  
+  .cabecera-izq p{
+    font-size: 24px;
+  }
+  
+  .cabecera-der{
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .imagen-perfil{
+    border: 3px solid #666973ed;
+  }
+
+  .seccion-tarjetas {
+    margin-top: 200px;
+    padding-inline: 5%;
+
+  }
+  
+  .card {
+    width: 45%;
+   }
+ }
 
  @media (max-width:767px){
 
@@ -335,13 +372,18 @@ body {
   }
 
   .seccion-tarjetas{
-    margin-top: 50px;
+    margin-top: 150px;
     height: auto;
     gap: 1rem;
   }
 
   .card{
-    height: 400px;
+    width: 80%;
+    height: 600px;
+  }
+
+  .card-info .title{
+    font-size: 20px;
   }
 
 
@@ -350,7 +392,7 @@ body {
 
 
 
-@media (max-width:414px){
+@media (max-width:450px){
 
   /* MEDIA NAV */
 
@@ -419,13 +461,18 @@ body {
   }
 
   .seccion-tarjetas{
-    margin-top: 50px;
-    height: auto;
-    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
   }
 
   .card{
-    height: 250px;
+    height: 300px;
+    width: 70%;
+  }
+
+  .title{
+    font-size: 10px;
   }
 
 
