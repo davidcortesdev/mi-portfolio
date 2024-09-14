@@ -1,3 +1,4 @@
+import { Footer } from './components/Footer'
 import { Navegador } from './components/Navegador'
 import { PrimeraSeccion } from './components/PrimeraSeccion'
 import { Separador } from './components/Separador'
@@ -18,7 +19,7 @@ function App() {
         <Tarjeta />
         <Tarjeta />
       </section>
-      <PrimeraSeccion />
+      <Footer />
     </>
   )
 }
