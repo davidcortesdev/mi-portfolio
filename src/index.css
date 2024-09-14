@@ -262,7 +262,7 @@ body {
     font-size: 2rem;
     justify-content: right;
     background: #2a2c31;
-    height: 3rem;
+    height: 6rem;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -299,7 +299,7 @@ body {
     flex-direction: column;
     padding: 0;
     height: auto;
-    padding-top: 40px;
+    padding-top: 100px;
   }
 
   .cabecera-izq{
@@ -308,12 +308,12 @@ body {
   }
   
   .cabecera-izq h1{
-    font-size: 40px;
+    font-size: 60px;
     color: #dfba69;
   }
   
   .cabecera-izq p{
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .cabecera-der{
@@ -325,6 +325,16 @@ body {
   .imagen-perfil{
     width: 14rem;
     border: 3px solid #666973ed;
+  }
+
+  .seccion-tarjetas{
+    margin-top: 50px;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .card{
+    height: 400px;
   }
 
 
