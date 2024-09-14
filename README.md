@@ -1,8 +1,18 @@
-# React + Vite
+## Descripción 📖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mi portfolio profesional. Creado con HTML, CSS y Javascript, React y Vite.
 
-Currently, two official plugins are available:
+## Autor 🖋️
+**David Cortés**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [LinkedIn](www.linkedin.com/in/david-cortés-lajara)
+* [Porfolio web](davidcortesdev.com)
+
+## Ver ejemplo en vivo 💻
+- [https://davidcortesdev.github.io/portfolio/](https://davidcortesdev.github.io/portfolio/)
+
+## Instalación 🪛
+Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el html.
+
+## Contratación ✍🏼
+Si quieres contratarme, puedes escribirme a davidcortes.dev@gamil.com para consultas.
