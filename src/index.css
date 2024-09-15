@@ -467,6 +467,7 @@ body {
   }
 
   .card{
+    height: 400px;
     width: 70%;
   }
 
