@@ -24,14 +24,16 @@ body {
   background: #2a2c31;
   height: 5rem;
   align-items: center;
-  padding-top: 2%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .links a{
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
@@ -225,14 +227,53 @@ body {
  /* FOOTER */
 
  .pie-pagina{
-  height: 350px;
+  height: 250px;
   background: #3e4147;
   align-content: center;
-  text-align: center;
   color: white;
   font-family: "Montserrat";
   font-size: 34px;
   font-weight: 700;
+ }
+
+ .imagenes-footer{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+ }
+
+ .pie-pagina a:nth-child(1){
+  margin: 0;
+  width: 50px;
+  height: 50px;
+ }
+
+ .pie-pagina a:nth-child(2){
+  margin: 0;
+  width: 50px;
+  height: 50px;
+ }
+
+ .pie-pagina img:nth-child(1){
+  margin: 0;
+  width: 50px;
+  height: 50px;
+ }
+
+ .pie-pagina img:nth-child(2){
+  margin: 0;
+  width: 50px;
+  height: 50px;
+ }
+
+ .pie-pagina img:nth-child(1):hover{
+  opacity: 0.8;
+ }
+
+ .pie-pagina img:nth-child(2):hover{
+  opacity: 0.8;
  }
  
 
@@ -309,8 +350,7 @@ body {
     z-index: 2;
   }
   
-  .links a{
-    font-size: 10px;
+  .links a{ 
     text-transform: uppercase;
   }
   
