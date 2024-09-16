@@ -1,4 +1,4 @@
-import imagen1 from '../assets/perfi2_grisoscuro.jpg'
+import imagen1 from '../assets/imagen-cabecera.svg'
 
 export const PrimeraSeccion = () => {
 

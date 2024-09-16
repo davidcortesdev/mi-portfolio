@@ -2,10 +2,9 @@
 export const Navegador = () => {
   return (
     <section className="nav">    
-        <div className="links">
+        <div className="links contenedor">
             <a href="#">Inicio</a>
             <a href="#">About Us</a>
-            <button className="btn-nav">+</button>
         </div>
     </section>
   )

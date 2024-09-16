@@ -12,6 +12,7 @@ body {
   background: #dfba69;
 }
 
+
 .nav{
   font-family: "Montserrat";
   display: flex;
@@ -40,36 +41,17 @@ body {
   display: flex;
   gap: 2rem;
   margin-right: 5rem;
+  align-items: c;
 }
-
-.btn-nav{
-  width: 70px;
-  height: 40px;
-  border-radius: 18px;
-  border: 0;
-  background: #fffedf;
-  font-size: 21px;
-  font-weight: 700;
-  color: #3e4147;
-}
-
-.btn-nav:hover{
-  background: #dfba69;
-  color: #2e2e2e;
-  font-size: 21px;
-  font-weight: 700;
-}
-
 
 
 /* CABECERA 1 */
 
 .seccion-cabecera{
-  height: 750px;
+  height: 78vh;
   background: #2a2c31;
   display: flex;
   justify-content: space-around;
-  padding-top: 18rem;
 }
 
 
@@ -83,7 +65,7 @@ body {
 .cabecera-izq h1{
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 5px;
-  font-size: 12rem;
+  font-size: 12vh;
   color: #dfba69;
   animation: change-color 2s ease-in-out alternate;
 }
@@ -105,7 +87,7 @@ body {
 
 
 .cabecera-izq p{
-  font-size: 3rem;
+  font-size: 3vh;
   color: #fffedf;
   font-weight: 500;
   animation: change-position 2s ease-out;
@@ -133,10 +115,9 @@ body {
 }
 
 .imagen-perfil{
-  width: 450px;
-  border-radius: 50%;
+  padding: 2rem;
+  width: 36vh;
   animation: change-size 1s linear;
-  border: 6px solid #666973ed;
 }
 
 @keyframes change-size{
@@ -156,24 +137,21 @@ body {
 }
 
 
-
 /* TARJETAS */
 
 .seccion-tarjetas {
   display: flex;
   flex-wrap: wrap;
   row-gap: 3rem;
-  column-gap: 2rem;
   margin-top: 300px;
-  padding: 0;
   height: auto;
   margin-bottom: 20rem;
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 .card {
   width: 31%;
-  height: 800px;
+  height: 650px;
   view-timeline-name: --tarjeta;
   view-timeline-axis: block;
   animation-timeline: --tarjeta;
@@ -209,16 +187,17 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  border: 25px solid #fffedf;
-  border-radius: 35px;
+  border: 1.2rem solid #fffedf;
+  border-radius: 1.2rem;
  }
  
  .card .title {
   width: 100%;
   height: 50%;
+  color: #2a2c31;
   background: #fffedf;
   font-family: "Montserrat";
-  font-size: 34px;
+  font-size: 3vh;
   font-weight: bold;
   letter-spacing: .1em;
  }
@@ -226,9 +205,7 @@ body {
 .image-card{
   width: 100%;
   height: 50%;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fffedf), url('./assets/perfi2_grisoscuro.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fffedf), url('./assets/imagen-prueba.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,23 +242,25 @@ body {
     width: 100%;
     z-index: 2;
   }
+
+  .links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .links a{
     font-size: 18px;
   }
-  
-  .btn-nav{
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-  }
+
 
   /* MEDIA CABECERA 1 */
 
   .seccion-cabecera{
     flex-direction: column;
     height: auto;
-    padding-top: 140px;
+    padding-block: 6rem;
   }
 
   .cabecera-izq{
@@ -303,22 +282,24 @@ body {
     text-align: center;
   }
   
-  .imagen-perfil{
-    border: 3px solid #666973ed;
-  }
+
 
   .seccion-tarjetas {
+    margin-inline: 1rem;
     margin-top: 200px;
-    padding-inline: 5%;
-
   }
   
   .card {
-    width: 45%;
+    width: 46%;
+    height: 26rem;
+   }
+
+   .card-info{
+    border: 1rem solid #fffedf;
    }
  }
 
- @media (max-width:767px){
+ @media (max-width:570px){
 
   /* MEDIA NAV */
 
@@ -338,32 +319,19 @@ body {
   }
   
   .links {
+    margin: 0 auto;
     display: flex;
-    gap: 0.5rem;
-
+    justify-content: center;
+    align-items: center;
   }
   
-  .btn-nav{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    font-size: 15px;
-  }
-  
-  .btn-nav:hover{
-    background: #dfba69;
-    color: #2e2e2e;
-    font-size: 21px;
-    font-weight: 700;
-  }
 
   /* MEDIA CABECERA 1 */
 
   .seccion-cabecera{
     flex-direction: column;
-    padding: 0;
-    height: auto;
-    padding-top: 100px;
+    padding-block: 5rem;
+    height: 95vh;
   }
 
   .cabecera-izq{
@@ -387,8 +355,8 @@ body {
   }
   
   .imagen-perfil{
-    width: 14rem;
-    border: 3px solid #666973ed;
+    width: 19rem;
+    padding: 1.5rem;
   }
 
   .seccion-tarjetas{
@@ -405,11 +373,7 @@ body {
   .card-info .title{
     font-size: 20px;
   }
-
-
 }
-
-
 
 
 @media (max-width:450px){
@@ -427,27 +391,19 @@ body {
   }
   
   .links a{
-    font-size: 12px;
+    font-size: 2vh;
     text-transform: uppercase;
   }
   
   .links {
     display: flex;
-    gap: 0.5rem;
-    margin-right: 5px;
-
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
   }
   
-  .btn-nav{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    font-size: 10px;
-  }
-
   .imagen-perfil{
     width: 14rem;
-    border: 2px solid #666973ed;
   }
 
   /* MEDIA CABECERA 1 */
@@ -455,7 +411,7 @@ body {
   .seccion-cabecera{
     flex-direction: column;
     padding: 0;
-    height: auto;
+    height: 95vh;
     padding-top: 120px;
   }
 
@@ -476,23 +432,25 @@ body {
   
   .cabecera-der{
     margin: 0;
+    margin-top: 1rem;
     max-height: 230px;
     text-align: center;
   }
 
   .seccion-tarjetas{
     padding: 0;
-    margin: 0;
-    margin-top: 60px;
+    margin: 0 auto;
+    margin-block: 60px;
+
   }
 
   .card{
     height: 500px;
-    width: 70%;
+    width: 90%;
   }
 
   .title{
-    font-size: 10px;
+    font-size: 10vh;
   }
 
 
