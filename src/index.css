@@ -48,7 +48,7 @@ body {
 /* CABECERA 1 */
 
 .seccion-cabecera{
-  height: 78vh;
+  height: 80vh;
   background: #2a2c31;
   display: flex;
   justify-content: space-around;
@@ -259,7 +259,7 @@ body {
 
   .seccion-cabecera{
     flex-direction: column;
-    height: auto;
+    height: 85vh;
     padding-block: 6rem;
   }
 
@@ -331,7 +331,7 @@ body {
   .seccion-cabecera{
     flex-direction: column;
     padding-block: 5rem;
-    height: 95vh;
+    height: 85vh;
   }
 
   .cabecera-izq{
@@ -411,7 +411,7 @@ body {
   .seccion-cabecera{
     flex-direction: column;
     padding: 0;
-    height: 95vh;
+    height: 85vh;
     padding-top: 120px;
   }
 
