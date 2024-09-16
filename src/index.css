@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  background: #2a2c31;
+}
+
 
 body {
   color: rgba(255, 255, 255, 0.87);
@@ -151,7 +155,7 @@ body {
 
 .card {
   width: 31%;
-  height: 650px;
+  height: 550px;
   view-timeline-name: --tarjeta;
   view-timeline-axis: block;
   animation-timeline: --tarjeta;
@@ -182,24 +186,25 @@ body {
   background-repeat: no-repeat;
   color: #fffedf;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   overflow: visible;
-  border: 1.2rem solid #fffedf;
-  border-radius: 1.2rem;
+  border: 1.2rem solid #fffedfb9;
+  border-radius: 0.5rem;
  }
  
  .card .title {
+  display: flex;
   width: 100%;
   height: 50%;
   color: #2a2c31;
-  background: #fffedf;
+  background: #fffedfb9;
   font-family: "Montserrat";
   font-size: 3vh;
   font-weight: bold;
   letter-spacing: .1em;
+  justify-content: center;
+  align-items: center;
  }
 
 .image-card{
@@ -210,13 +215,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
  }
- 
+
  .card:hover .card-info {
   color: #f7ba2b;
   transition: color 1s;
  }
-
-
 
 
  /* FOOTER */
@@ -282,8 +285,6 @@ body {
     text-align: center;
   }
   
-
-
   .seccion-tarjetas {
     margin-inline: 1rem;
     margin-top: 200px;
@@ -291,11 +292,6 @@ body {
   
   .card {
     width: 46%;
-    height: 26rem;
-   }
-
-   .card-info{
-    border: 1rem solid #fffedf;
    }
  }
 
@@ -331,7 +327,7 @@ body {
   .seccion-cabecera{
     flex-direction: column;
     padding-block: 5rem;
-    height: 85vh;
+    height: 70vh;
   }
 
   .cabecera-izq{
@@ -367,7 +363,6 @@ body {
 
   .card{
     width: 100%;
-    height: 800px;
   }
 
   .card-info .title{
@@ -411,7 +406,7 @@ body {
   .seccion-cabecera{
     flex-direction: column;
     padding: 0;
-    height: 85vh;
+    height: 65vh;
     padding-top: 120px;
   }
 
@@ -445,7 +440,6 @@ body {
   }
 
   .card{
-    height: 500px;
     width: 90%;
   }
 
